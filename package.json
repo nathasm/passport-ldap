@@ -16,8 +16,9 @@
   },
   "main": "./lib/passport-ldap",
   "dependencies": {
-    "pkginfo": "0.2.x",
-    "ldapjs": "0.6.2"
+    "debug": "^2.2.0",
+    "ldapjs": "0.6.2",
+    "pkginfo": "0.2.x"
   },
   "devDependencies": {
     "vows": "0.6.x"
