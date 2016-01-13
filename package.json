@@ -1,6 +1,6 @@
 {
   "name": "passport-ldap",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "LDAP authentication strategy for Passport.",
   "author": {
     "name": "Paul Dixon",
@@ -16,15 +16,21 @@
   },
   "main": "./lib/passport-ldap",
   "dependencies": {
-    "debug": "^2.2.0",
-    "ldapjs": "0.6.2",
+    "debug": "2.2.0",
+    "ldapjs": "^1.0.0",
     "pkginfo": "0.2.x"
   },
   "devDependencies": {
-    "vows": "0.6.x"
+    "body-parser": "^1.14.2",
+    "chai": "^3.4.1",
+    "express": "^4.13.3",
+    "ldapjs": "^1.0.0",
+    "mocha": "^2.3.4",
+    "passport": "^0.3.2",
+    "supertest": "^1.1.0"
   },
   "scripts": {
-    "test": "NODE_PATH=lib node_modules/.bin/vows test/*-test.js"
+    "test": "NODE_PATH=lib mocha --reporter spec test/*.spec.js"
   },
   "engines": {
     "node": ">= 0.4.0"
